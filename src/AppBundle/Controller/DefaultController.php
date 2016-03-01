@@ -62,7 +62,7 @@ class DefaultController extends Controller
     public function italicBoldHelloAction(Request $request)
     {
         $wrapper = new TextWrapper();
-        $userName = $wrapper->italicText('World');
+        $userName = $wrapper->italicBoldText('World');
 
         return $this->render('AppBundle:Default:hello.html.twig', [
             'userName' => $userName,
